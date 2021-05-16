@@ -1,0 +1,5 @@
+AddDefaultCharset UTF-8
+RewriteEngine on
+
+RewriteRule ^auth/?$ index.php?module=authView&logout=$1 [L,QSA]
+RewriteRule ^register/?$	index.php?module=registerView [L,QSA]
